@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Rubik+Dirt&family=Unica+One&family=Zen+Dots&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior:smooth;
+  cursor: url(Images/ZombieCursor.png), auto;
+}
+
+.StartPage {
+  display: flex;
+  justify-content: center;
+  background-image: url(Images/frightening-halloween-realistic-background_33099-1052.avif);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.Title {
+  font-family: "Rubik Dirt", system-ui;
+  color: rgb(229, 226, 226);
+  text-shadow: 0 0 5px #ff66ff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.MainPage {
+  border-top: 2px dotted rgb(15, 15, 15);
+  box-shadow: 0 0 40px rgb(217, 113, 255);
+  background-color: rgb(67, 50, 74);
+}
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-content: center;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 35px;
+  background-image: linear-gradient(
+    to top,
+    rgba(159, 69, 149, 0.832),
+    rgb(91, 60, 86)
+  );
+}
+
+
+
+nav img {
+  height: 100%;
+  width: auto;
+  margin-left: 2%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  gap: 100px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(229, 226, 226);
+  text-shadow: 0 0 5px #ff66ff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: url(Images/ZombiePointer.png),auto;
+}
+
+nav ul li a:hover {
+  background-color: rgb(255, 114, 250);
+  color: white;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+
+
+h1 {
+  margin: 10%;
+  padding-top: 90px;
+  font-family: "Rubik Dirt", system-ui;
+  color: rgb(53, 33, 63);
+  font-size: 110px;
+  text-shadow: 0 0 25px rgb(255, 114, 250);
+}
+
+h2 {
+  display: flex;
+  font-family: "Rubik Dirt", system-ui;
+  justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+}
+.animals {
+  color: #ef5dff;
+}
+
+p {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card {
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(250, 161, 255, 0.411);
+  transition: 0.3s;
+  width: 40%;
+  background-image: linear-gradient(
+    to top,
+    rgba(236, 112, 221, 0.832),
+    rgb(216, 90, 255)
+  );
+  border-radius: 50px;
+  padding: 10px 50px 20px 50px;
+}
+
+#cardForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  width: auto;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+#locationcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  width: auto;
+  font-family: "Rubik Dirt", system-ui;
+  margin-bottom: 50px;
+  margin-top: 90px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e992fc;
+  border-radius: 4px;
+}
+.cardHeader {
+  justify-self: center;
+  font-family: "Rubik Dirt", system-ui;
+  margin: 10px;
+  color: rgb(45, 7, 54);
+  text-shadow: 0 0 5px #ffc0ff;
+  font-size: 20px;
+}
+
+iframe {
+  width:600;
+  height:450; 
+  border-style: hidden;
+  border-radius: 20px;
+}
+input[type="submit"] {
+  width: 100%;
+  background-color: #630378;
+  color: white;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-family: "Rubik Dirt", system-ui;
+}
+
+label {
+  color: rgb(237, 191, 249);
+  text-shadow: 0 0 5px #100210;
+}
+
+.EntityCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+
+.EntityCards article {
+  display: grid;
+  align-items: center;
+  background-color: #ef5dff;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(255, 133, 251, 0.608);
+  margin-bottom: 60px;
+  margin-left: 20px;
+}
+
+.InformationCards article ul {
+  list-style-type: none;
+}
+
+.InformationCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+}
+
+.InformationCards article {
+  display: grid;
+  align-items: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(236, 112, 221, 0.832),
+    rgb(216, 90, 255)
+  );
+  border: 2px solid black;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 5px rgb(255, 114, 250);
+  margin-bottom: 60px;
+  margin-left: 20px;
+  padding: 0 20px 20px 20px;
+  width: 80%;
+  height: 90%;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+
+.card {
+  box-shadow: 0px 0px 5px 5px rgba(253, 95, 235, 0.755);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background: rgba(20, 20, 30, 0.9);
+  box-shadow: 0 0 25px rgba(168, 10, 236, 0.4);
+  border: 1px solid #444;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid #535353;
+  text-align: left;
+}
+
+th {
+  background: linear-gradient(90deg, #1a001f, #330033);
+  color: #ff66ff;
+  text-shadow: 0 0 5px #ff66ff;
+  font-size: 18px;
+}
+
+
+
+tr:nth-child(even) {
+  background-color: rgba(40, 0, 50, 0.3);
+}
+
+tr:hover {
+  background-color: rgba(179, 0, 255, 0.2);
+  transition: 0.3s;
+}
+td {
+  color: rgb(229, 226, 226);
+  text-shadow: 0 0 5px #ff66ff;
+  width: 25%;
+}
+
+td a {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ff0fff;
+  text-decoration: none;
+  
+}
+td a:hover {
+  color: #edb3fd;
+  text-shadow: 0 0 20px #ff66ff;
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: url(Images/ZombiePointer.png),auto;
+}
+
+td:first-child {
+  color: #e1c7fc;
+  font-weight: bold;
+  text-shadow: 0 0 5px #9900cc;
+}
+
+
+
+
+footer {
+  background-image: linear-gradient(
+    to top,
+    rgba(159, 69, 149, 0.832),
+    rgb(91, 60, 86)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px hidden rgb(15, 15, 15);
+  box-shadow: 0 0 40px rgb(152, 94, 172);
+}
+
+.copyright {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Rubik Dirt", system-ui;
+  text-shadow: 0 0 5px #ff66ff;
+}
+
+.footer-listitems {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: left;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10px;
+  row-gap: 5px;
+  width: 80%;
+  color: white;
+  text-shadow: 0 0 5px #ff66ff;
+
+}
+
+.footer-headers {
+  font-family: "Rubik Dirt", system-ui;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  color: rgb(211, 209, 211);
+
+}
+
+.footer-listitems a:hover {
+  color: rgb(219, 74, 251);
+  text-shadow: 0 0 5px #ff66ff;
+  text-decoration: none;
+  cursor: url(Images/ZombiePointer.png),auto;
+}
+
+.footer-listitems a {
+  color: white;
+  text-shadow: 0 0 20px #ff66ff;
+  text-decoration: none;
+}
+
+.social {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+
+.social a img {
+  padding-left: 3px;
+  padding-right: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.social a img:hover {
+  transform:scale(1.5);
+  cursor: url(Images/ZombiePointer.png),auto;
+}
+
+#ghost-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 9999;
+}
+
+/* small flying ghost */
+.ghost {
+  position: absolute;
+  width: 48px; /* tweak size */
+  height: 48px;
+  transform: translate(calc(-50% + var(--drift, 0px)), 0);
+  will-change: transform, opacity;
+  animation-name: ghostUp;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-fill-mode: forwards;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.4)) saturate(1.1);
+  opacity: 1;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+
+/* keyframes use a CSS variable --destY for how far up to fly */
+@keyframes ghostUp {
+  0% {
+    transform: translate(calc(-50% + var(--drift, 0px)), 0) rotate(0deg)
+      scale(0.95);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(-50% + var(--drift, 0px)), calc(var(--destY) / 2))
+      rotate(var(--rot, 8deg)) scale(1.05);
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--drift, 0px)), var(--destY))
+      rotate(calc(var(--rot, 8deg) * 1.6)) scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ghost {
+    animation: none;
+    display: none;
+  }
+}
